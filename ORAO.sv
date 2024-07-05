@@ -216,7 +216,13 @@ localparam CONF_STR =
 ////////////////////   CLOCKS   ///////////////////
 
 wire clk_sys;
-assign clk_sys = CLK_50M;
+pll pll
+(
+	.refclk(CLK_50M),
+	.rst(0),
+	.outclk_0(clk_sys)
+);
+
 reg reset = 1;
 
 always @(posedge clk_sys) begin
