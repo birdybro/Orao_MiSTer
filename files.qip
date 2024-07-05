@@ -9,4 +9,4 @@ set_global_assignment -name SYSTEMVERILOG_FILE rtl/orao_hw.sv
 set_global_assignment -name SYSTEMVERILOG_FILE rtl/keyboard.sv
 set_global_assignment -name VHDL_FILE rtl/cpu65xx_fast.vhd
 set_global_assignment -name VHDL_FILE rtl/cpu65xx_e.vhd
-set_global_assignment -name SYSTEMVERILOG_FILE rtl/ORAO.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ORAO.sv
